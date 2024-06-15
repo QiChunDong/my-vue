@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my-vue</title>
+</head>
+
+<body>
+    <div id="app">hello my vue!</div>
+    <script src="./dist/vue.js"></script>
+    <script>
+        let vm = new Vue({
+            el: '#app',
+            data() {
+                return {
+                    a: 1,
+                    b: 'vevjkdfkjbvnfkj'
+                }
+            }
+        })
+        console.log(vm)
+        console.log(vm._data.a)
+    </script>
+</body>
+
+</html>
