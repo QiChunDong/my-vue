@@ -16,12 +16,21 @@
             data() {
                 return {
                     a: 1,
-                    b: 'vevjkdfkjbvnfkj'
+                    b: {
+                        secField: 'vevjkdfkjbvnfkj'
+                    },
+                    list: [1, 2, 3, {a: 123, b: 'gbdbh'}]
                 }
             }
         })
-        console.log(vm)
-        console.log(vm._data.a)
+        // console.log(vm)
+        // 获取a会触发get
+        // console.log(vm._data.a)
+        // 打印data时是看不到a的，鼠标展开的时候才会触发get
+        // console.log(vm._data)
+
+        // 测试数组
+        console.log(vm._data.list)
     </script>
 </body>
 
